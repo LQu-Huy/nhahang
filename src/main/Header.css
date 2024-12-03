@@ -1,0 +1,78 @@
+/* src/Header.css */
+body {
+  overflow-x: hidden; /* Ngăn chặn cuộn ngang */
+  margin: 0; /* Xóa margin mặc định của body */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa toàn bộ header */
+  padding: 0px 10px; /* Thêm padding phía trên và dưới */
+}
+
+.yellow-rectangle {
+  width: 100%; /* Chiều rộng đầy đủ của header */
+  height: 70px; /* Giảm chiều cao của hình chữ nhật vàng xuống hợp lý */
+  background-color: rgb(245, 227, 129); /* Màu vàng nhẹ */
+  display: flex; /* Đặt các phần tử theo hàng ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Căn đều các phần tử trong thanh */
+  padding: 0 20px; /* Thêm padding cho ô vàng */
+}
+
+.logo-container {
+  display: flex; /* Đặt logo và các phần tử khác vào 1 hàng ngang */
+  align-items: center; /* Căn giữa logo */
+}
+
+.logo {
+  width: 60px; /* Đặt chiều rộng của logo */
+  height: auto; /* Giữ tỷ lệ của logo */
+  border-radius: 5px; /* Bo góc logo */
+}
+
+.button-container {
+  display: flex; /* Hiển thị các nút theo hàng ngang */
+  gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+.button {
+  background-color: rgb(245, 227, 129); /* Màu vàng nhẹ */
+  border-radius: 30px; /* Góc bo tròn mềm mại cho các nút */
+  padding: 12px 20px; /* Thêm padding cho các nút */
+  font-size: 16px; /* Tăng kích thước chữ trong nút */
+  font-weight: bold; /* Làm đậm chữ để nổi bật */
+  color: rgba(0, 0, 0, 0.836); /* Chữ màu trắng */
+  cursor: pointer; /* Con trỏ chuột dạng tay khi di chuột qua */
+  text-align: center; /* Căn giữa chữ trong nút */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.button:hover {
+  background-color: #fec969; /* Màu nền khi di chuột qua nút */
+  transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+.button:active {
+  background-color: #fec969; /* Màu nền khi nhấn nút */
+  transform: scale(0.98); /* Hiệu ứng thu nhỏ khi nhấn */
+}
+
+@media (max-width: 768px) {
+  /* Đảm bảo giao diện thân thiện với các thiết bị di động */
+  .yellow-rectangle {
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc khi màn hình nhỏ */
+    height: auto; /* Chiều cao tự động */
+    align-items: center; /* Căn giữa logo và nút */
+  }
+
+  .logo {
+    width: 50px; /* Giảm kích thước logo trên các thiết bị di động */
+  }
+
+  .button-container {
+    flex-direction: column; /* Đặt các nút thành cột trên thiết bị di động */
+    gap: 15px; /* Giảm khoảng cách giữa các nút */
+  }
+}

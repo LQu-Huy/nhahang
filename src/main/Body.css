@@ -1,0 +1,91 @@
+/* src/Body.css */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Chiều cao của hình ảnh lớn */
+  overflow: hidden; /* Ẩn phần vượt ra ngoài */
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 25%; /* Chỉ chiếm nửa bên phải */
+  background: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
+  color: white; /* Màu chữ trắng */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa nội dung */
+  padding: 20px; /* Padding cho overlay */
+}
+
+.price {
+  font-weight: bold; /* Làm đậm giá cả */
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.192); /* Nền nút mờ */
+  border: none; /* Không viền */
+  font-size: 1rem; /* Kích thước chữ lớn */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+  border-radius: 50%; /* Bo tròn nút */
+  color: white; /* Màu chữ trắng */
+
+  width: 35px; /* Chiều rộng của nút */
+  height: 35px; /* Chiều cao của nút */
+  display: flex; /* Để căn giữa chữ */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.prev-button {
+  left: 10px; /* Đặt nút bên trái */
+}
+
+.next-button {
+  right: 10px; /* Đặt nút bên phải */
+}
+
+.restaurant-images {
+  display: flex; /* Vẫn giữ kiểu hiển thị flex */
+  flex-direction: column; /* Đổi chiều thành dọc */
+  margin-top: 0 0px; /* Khoảng cách giữa hình ảnh lớn và ảnh nhà hàng */
+}
+
+.restaurant-image {
+  position: relative; /* Để có thể định vị chữ thông tin */
+  margin: -2px 0; /* Khoảng cách giữa các ảnh nhà hàng */
+}
+
+.restaurant-image-img {
+  width: 100vw; /* Chiều rộng 100% màn hình */
+  height: auto; /* Chiều cao tự động để giữ tỉ lệ */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+.restaurant-image p {
+  position: absolute; /* Để đặt chữ thông tin lên ảnh */
+  bottom: 10px; /* Đặt chữ ở dưới cùng */
+  left: 50%; /* Căn giữa chữ */
+  transform: translateX(-50%); /* Căn giữa chính xác */
+  color: white; /* Màu chữ trắng */
+  background: rgba(0, 0, 0, 0.5); /* Nền chữ mờ */
+  padding: 5px; /* Padding cho chữ */
+  border-radius: 5px; /* Bo tròn chữ */
+}
