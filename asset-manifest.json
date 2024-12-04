@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nhahang/static/css/main.907bb4f1.css",
+    "main.js": "/nhahang/static/js/main.f1586182.js",
+    "static/media/bunca.jpg": "/nhahang/static/media/bunca.b9d2b0aea6847cf74e66.jpg",
+    "static/media/noodle.jpg": "/nhahang/static/media/noodle.5b9fcf5524cd7c46cb74.jpg",
+    "static/media/logo.jpg": "/nhahang/static/media/logo.4ee47eeba3042874cdd3.jpg",
+    "static/media/nem.jpg": "/nhahang/static/media/nem.35897e6c1ed79c50e464.jpg",
+    "static/media/OIP.jpg": "/nhahang/static/media/OIP.5b0dec5629bc4c91c749.jpg",
+    "static/media/download (2).jpg": "/nhahang/static/media/download (2).94b0fa983174ecbc2304.jpg",
+    "static/media/download (1).jpg": "/nhahang/static/media/download (1).bbde15fc7341ba562757.jpg",
+    "index.html": "/nhahang/index.html",
+    "main.907bb4f1.css.map": "/nhahang/static/css/main.907bb4f1.css.map",
+    "main.f1586182.js.map": "/nhahang/static/js/main.f1586182.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.907bb4f1.css",
+    "static/js/main.f1586182.js"
+  ]
+}
